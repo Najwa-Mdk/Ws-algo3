@@ -1,0 +1,47 @@
+FUNCTION calculate_product (v1, v2) : INTEGER
+VAR
+    v1, v2 , i: INTEGER ;
+    ps : INTEGER :=0 ;
+BEGIN
+    for (i = 0; i < v1.length; i++)
+        ps := v1[i] * v2[i]
+    RETURN ps ;
+END
+
+PROCEDURE read_array (n: INTEGER , VAR tab : ARRAY_OF INTEGER)
+VAR i : INTEGER ;
+BEGIN
+FOR i from 0 to n-1 DO 
+ Read (tab[i]);  
+END_FOR
+END 
+
+PROCEDURE orthogonal_vectors (n: INTEGER , VAR tab : ARRAY_OF INTEGER)
+VAR i : INTEGER ;
+BEGIN
+FOR i from 0 to n-2 DO 
+ tab[i] := tab[i] * tab[i+1];
+ if (v1[i] * v2[i]= 0)
+ Write (ps)
+END_FOR
+END 
+
+ALGORITHM dot_product 
+VAR
+    tab : ARRAY_OF INTEGER[];
+    ps, v1, v2 : INTEGER ;
+    product : INTEGER :=0 ;
+BEGIN
+    // Write a procedure, called dot_product
+    Write ();
+    //calculate the dot product of v1 and v2
+    //sub algorithm calculating the dot product
+    ps : calculate_product (v1,v2)
+   // add elements 
+   // sub algorithm add elements 
+    read_array (n,tab)
+   //write vectors of given IR are orthogonal
+   // sub algorithm verctors are orthogonal 
+    orthogonal_vectors (n,tab)
+
+END
